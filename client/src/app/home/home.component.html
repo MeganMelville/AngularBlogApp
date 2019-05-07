@@ -1,0 +1,37 @@
+
+
+<div class="mask rgba-gradient align-items-center">
+<header class="header clearfix">
+    <nav>
+        <ul class="nav nav-pills float-right">
+            <li class="nav-item">
+                <button type="button" class="btn btn-success">
+                  Home
+                </button>
+            </li>
+            <li class="nav-item">
+                <button #addPost type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#exampleModal">
+                  Add Post
+                </button>
+            </li>
+            <li class="nav-item">
+                 <button (click)="logout()" type="button" class="btn btn-outline-success">
+                  Logout
+                </button>
+            </li>
+        </ul>
+    </nav>
+    <h3 class="tex">Angular Blog App</h3>
+</header>
+
+<main role="main">
+   
+    <app-show-post></app-show-post>
+    <app-add-post></app-add-post>
+    
+</main>
+
+<footer class="footer">
+    <p>&copy; Megan's Company 2019</p>
+</footer>
+</div>
